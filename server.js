@@ -59,6 +59,14 @@ app.use(requestLogger)
 app.use(exampleRoutes)
 app.use(userRoutes)
 
+// load the views (client side)***
+app.use('/app/views/index.html')
+
+// loading my assets ***
+app.use('/app/assets/css')
+app.use('/app/assets/img')
+app.use('/app/assets/js')
+
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
 // passed any error messages from them
