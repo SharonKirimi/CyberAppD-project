@@ -4,9 +4,9 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 
 // require route files
-const postRoutes = require('./app/routes/post_routes')
-const userRoutes = require('./app/routes/user_routes')
-const commentRoutes = require('./app/routes/comment_routes')
+const postRoutes = require('./routes/post_routes')
+const userRoutes = require('./routes/user_routes')
+const commentRoutes = require('./routes/comment_routes')
 
 // require middleware
 const errorHandler = require('./lib/error_handler')

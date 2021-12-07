@@ -4,7 +4,7 @@ const router = express.Router()
 
 
 const Post = require('../models/post')
-const handle404 = require('../../lib/custom_errors')
+const handle404 = require('../lib/custom_errors')
 
 router.get('/comments', (req, res, next) => {
     // accept and ID of the post to add a review to

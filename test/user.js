@@ -1,11 +1,11 @@
 process.env.TESTENV = true
 
 const bcrypt = require('bcrypt')
-const User = require('../app/models/user')
+const User = require('../CyberApp_API/models/user')
 
 const chai = require('chai')
 const chaiHttp = require('chai-http')
-const server = require('../server')
+const server = require('../CyberApp_API/server')
 chai.should()
 
 chai.use(chaiHttp)
