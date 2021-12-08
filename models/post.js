@@ -7,7 +7,7 @@ const postSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		Owner: {
+		owner: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',
 			required: true,
